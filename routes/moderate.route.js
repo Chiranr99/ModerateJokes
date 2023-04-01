@@ -5,8 +5,8 @@ module.exports = app => {
 
     router.post("/",moderate.create);
     router.get("/alljokes",moderate.findAll);
-    router.get("/accept/:SId",moderate.moderateAccept);
-    router.get("/reject/:SId",moderate.moderateReject);
+    router.get("/accept/:SId",moderate.Accept);
+    router.get("/reject/:SId",moderate.Reject);
 
     app.use('/api/moderate', router);
 }
